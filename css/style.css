@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+    --primary-color: #CC9D9B;
+    --dark-color: #202523;
+    --light-color: #F7F7F5;
+    --lose-color: #FF423F;
+    --win-color: #18DC60;
+    --modal-duration: 1s;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: var(--light-color);
+    color: #2F2D2E;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow:hidden;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.restart-btn {
+    display: none;
+    background: var(--light-color);
+    color: #2F2D2E;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.restart-btn:hover {
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+
+.header {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.header h1 {
+    margin-bottom: 1rem;
+}
+
+.score {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.2rem;
+    ;
+}
+
+.score p:first-child {
+    background: var(--dark-color);
+    color: var(--light-color)
+}
+
+.score p:last-child {
+    background: var(--light-color);
+    color: var(--dark-color);
+}
+
+.choices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.choice {
+    cursor: pointer;
+}
+
+.choice:hover {
+    color: var(--primary-color)
+}
+
+.text-win {
+    color: var(--win-color);
+}
+
+.text-lose {
+    color: var(--lose-color);
+}
+
+
+@media(max-width: 700px) {
+    .choice {
+        font-size: 110px;
+    }
+}
+@media(max-width: 500px) {
+    .choice {
+        font-size: 80;
+    }
+}
