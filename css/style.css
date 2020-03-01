@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
-    --primary-color: #CC9D9B;
+    --primary-color: #6E8898;
     --dark-color: #202523;
     --light-color: #F7F7F5;
     --lose-color: #FF423F;
@@ -19,7 +19,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background: var(--light-color);
-    color: #2F2D2E;
+    color: var(--dark-color);
 }
 
 .container {
@@ -32,8 +32,8 @@ body {
 
 .restart-btn {
     display: none;
-    background: var(--light-color);
-    color: #2F2D2E;
+    background: var(--dark-color);
+    color: var(--light-color);
     padding: 0.4rem 1.3rem;
     font-size: 1rem;
     cursor: pointer;
@@ -43,7 +43,7 @@ body {
 }
 
 .restart-btn:hover {
-    background: var(--dark-color);
+    background: var(--primary-color);
     color: var(--light-color);
 }
 
