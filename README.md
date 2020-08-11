@@ -1,5 +1,7 @@
 # Rock Paper Scissors game built in JavaScript
 
+A take on Rock Paper Scissors while learning JavaScript
+
 ## How to run:
 
 Clone repository  
